@@ -11,7 +11,8 @@ p{
     font-size: 18px;
     color: #ffffff;
 }
-.button{
+a{
+    text-decoration: none;
     padding: 12px 18px;
     color: #ffffff;
     background-color: #C4101C;
@@ -24,8 +25,9 @@ p{
 header{
     height: 695px;
     background-image: url(images/new\ image.jpg);
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 .container-first{
     width: 850px;
@@ -37,12 +39,10 @@ header{
     align-items: center;
     padding-top: 180px;
     margin-left: 370px;
-    
-/*     
-    background: #1a0d27bb;
-    background-blend-mode: darken;
-    background-blend-mode: soft-light;
-     */
+}
+h1 span{
+    font-family: 'Lobster Two';
+    color: #0963A4;
 }
 .inner-container-1{
     padding: 5px 10px;
@@ -102,7 +102,7 @@ margin: 0 20px;
 
 /* Donate Plan Section Styles */
 
-.container-third, .container-fourth{
+.container-third, .container-fourth, .footer-container, .focus-container{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -124,7 +124,7 @@ margin: 0 20px;
     text-align: left;
     
 }
-.container-third p, .container-fourth p{
+.container-third p, .container-fourth p, .footer-container p{
     color: #707070;
 }
 .inner-container-3{
@@ -146,6 +146,56 @@ margin: 0 20px;
 
 /* Bonus Section Styles */
 
+.focus-container{
+    width: 90%;
+padding-left: 80px;
+}
+.focus-container h2{
+    margin: 60px auto;
+}
+.upper-container, .lower-container{
+    display: flex;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+}
+.card{
+    width: 27%;
+    margin: 15px 6px;
+    border: 1px solid lightgray;
+}
+.card img{
+    width: 100%;
+}
+.card h5, .card h6{
+    font-size: 30px;
+    color: #0963A4;
+    font-weight: bold;
+}
+.card h6{
+    font-size: 20px;
+}
+.card h6 > span{
+    font-size: 15px;
+    font-weight: normal;
+}
+.focus-inner-container{
+    padding: 10px;
+}
+#card-5{
+    margin-top: 50px;
+    
+}
+
+
+
+
+
+
+
 
 
 /* Update Section Styles */
@@ -158,9 +208,24 @@ margin: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 130px;
 }
 .email{
-    padding: 12px 40px;
+    padding: 13.5px 40px;
     border: none;
     background-color: #D9D9D9;
+}
+
+/* Footer Section */
+
+#footer-section{
+    height: 177px;
+    background: #0B0D17;
+}
+.footer-container h3{
+    font-size: 36px;
+    font-family: 'Lobster Two';
+ color: #C4101C;
+ padding-top: 43px;
+ padding-bottom: 24px;
 }
